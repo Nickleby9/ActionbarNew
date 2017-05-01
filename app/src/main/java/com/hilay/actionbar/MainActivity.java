@@ -55,23 +55,23 @@ public class MainActivity extends AppCompatActivity {
                 if (permission == PackageManager.PERMISSION_GRANTED) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
                     if (callIntent.resolveActivity(getPackageManager()) != null) {
-                        try {
                             startActivity(callIntent);
-                        } catch (Exception e) {
-                            Toast.makeText(this, "No permissions", Toast.LENGTH_SHORT).show();
-                        }
                     } else {
                         Toast.makeText(this, "No suitable app found", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 1);
-
+                    try {
+                        Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
+                    if (callIntent.resolveActivity(getPackageManager()) != null) {
+                            startActivity(callIntent);
+                    } else {
+                        Toast.makeText(this, "No suitable app found", Toast.LENGTH_SHORT).show();
+                    } catch {
+                        Toast.makeText(this, "No permissions", Toast.LENGTH_SHORT).show();
+                    }
+                    }
                 }
-                Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
-                if (callIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(callIntent);
-                }
-
                 return true;
             case R.id.action_dial:
                 Intent dialIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(uri));

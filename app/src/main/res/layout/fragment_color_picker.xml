@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hilay.actionbar.ColorPicker"
+    android:paddingTop="100dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        tools:text="Red" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        tools:text="Green" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:text="TextView"
+        tools:text="Blue" />
+
+    <SeekBar
+        android:id="@+id/sbRed"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="24dp"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/sbGreen"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="56dp"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/sbBlue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="88dp"
+        android:max="255" />
+
+    <EditText
+        android:id="@+id/etRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="14dp"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="45dp"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="80dp"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="160dp"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/tvTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="130dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="160dp"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="160dp"
+        android:text="Random" />
+</FrameLayout>

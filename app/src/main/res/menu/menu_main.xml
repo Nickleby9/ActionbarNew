@@ -17,4 +17,9 @@
         android:title="Call"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/action_color"
+        android:title="Change color"
+        app:showAsAction="never"
+        />
 </menu>
